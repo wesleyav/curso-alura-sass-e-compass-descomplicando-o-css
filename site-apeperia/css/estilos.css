@@ -156,44 +156,6 @@ header .container {
   color: #c24e4b;
   font-size: 2.75em; }
 
-.itens-plano {
-  padding-left: 1.2em; }
-  .itens-plano li {
-    font-size: 1em;
-    list-style: none;
-    border-bottom: 1px solid #acacac;
-    padding: 0.5em;
-    width: 14.8em; }
-    .itens-plano li:last-child {
-      border: 0; }
-  .itens-plano span {
-    float: right; }
-
-.plano button {
-  background: #c24e4b;
-  border: 0;
-  color: #fff;
-  width: 210px;
-  height: 38px;
-  font-size: 1.2em;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  margin-left: 2em; }
-
-.icone-check,
-.icone-x {
-  background: url(../imagens/sprite.png) no-repeat;
-  width: 18px;
-  height: 18px; }
-
-.icone-check {
-  background-position: -5px -5px; }
-
-.icone-x {
-  background-position: -33px -5px; }
-
 /** Blog **/
 .blog {
   display: block;
