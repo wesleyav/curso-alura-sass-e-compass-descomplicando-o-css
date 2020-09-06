@@ -10,12 +10,11 @@ $cor-branca: #fff;
 }
 
 @mixin sombra-padrao {
-  
   -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
 }
 
-@mixin image-replacement{
+@mixin image-replacement {
   text-indent: -9999px;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -61,30 +60,27 @@ header .container {
   position: relative;
 }
 
-.menu-opcoes {
+.menu-principal {
   position: absolute;
   right: 0;
-  top: -.5em;
+  top: -0.5em;
   font-size: 1.2em;
   font-weight: lighter;
-}
+  ul {
+    padding-left: 0;
+  }
+  li {
+    display: inline-block;
+    width: 5em;
+  }
+  a {
+    color: white;
+    text-decoration: none;
 
-.menu-opcoes ul {
-  padding-left: 0;
-}
-
-.menu-opcoes li {
-  display: inline-block;
-  width: 5em;
-}
-
-.menu-opcoes a {
-  color: white;
-  text-decoration: none;
-}
-
-.menu-opcoes a:hover {
-  text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 /** Destaque **/
@@ -116,13 +112,12 @@ header .container {
   margin-top: 1em;
   background: $cor-padrao;
   border: 0;
-  padding: .6em;
+  padding: 0.6em;
   font-size: 1.2em;
   @include borda-arredondada(50px);
   @include sombra-padrao();
   font-weight: bold;
 }
-
 
 /** Sobre **/
 .sobre {
@@ -141,7 +136,7 @@ header .container {
 }
 
 .sobre p {
-  font: .9em/1.8 sans-serif;
+  font: 0.9em/1.8 sans-serif;
 }
 
 .sobre p:first-child {
@@ -204,7 +199,7 @@ header .container {
   background: $cor-padrao;
   text-align: center;
   height: 2em;
-  padding-top: .6em;
+  padding-top: 0.6em;
   margin-top: 0;
 }
 
@@ -222,7 +217,7 @@ header .container {
   font-size: 1em;
   list-style: none;
   border-bottom: 1px solid #acacac;
-  padding: .5em;
+  padding: 0.5em;
   width: 14.8em;
 }
 
@@ -246,7 +241,8 @@ header .container {
   margin-left: 2em;
 }
 
-.icone-check, .icone-x {
+.icone-check,
+.icone-x {
   background: url(../imagens/sprite.png) no-repeat;
   width: 18px;
   height: 18px;
@@ -260,8 +256,6 @@ header .container {
   background-position: -33px -5px;
 }
 
-
-
 /** Blog **/
 .blog {
   display: block;
@@ -272,7 +266,7 @@ header .container {
   content: "";
   background: url(../imagens/fundo.png);
   background-size: 25px 25px;
-  opacity: .15;
+  opacity: 0.15;
   top: 0;
   left: 0;
   bottom: 0;
@@ -323,7 +317,7 @@ form {
 .contato input,
 textarea {
   width: 100%;
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
   padding: 4px 8px;
   @include borda-arredondada();
   border: 2px solid #ccc;
@@ -350,7 +344,7 @@ footer {
 footer::after {
   content: "";
   background: url(../imagens/fundo-rodape.png);
-  opacity: .02;
+  opacity: 0.02;
   top: 0;
   left: 0;
   bottom: 0;
@@ -418,7 +412,7 @@ footer a {
   display: block;
   width: 55px;
   height: 55px;
- @include image-replacement();
+  @include image-replacement();
   margin-left: 1em;
 }
 
