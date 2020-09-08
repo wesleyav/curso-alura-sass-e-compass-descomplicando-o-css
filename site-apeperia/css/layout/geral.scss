@@ -8,7 +8,7 @@ body {
     margin: 0 auto;
   }
 
-  @media (max-width: 980px) {
+  @media (max-width: $ponto-de-quebra) {
     .container {
       width: 90%;
     }
