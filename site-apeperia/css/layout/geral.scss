@@ -8,10 +8,9 @@ body {
     margin: 0 auto;
   }
 
-  @media (max-width: $ponto-de-quebra) {
-    .container {
+  @media #{$mq-mobile} {
       width: 90%;
-    }
+    
   }
   
   .titulo-secao {
